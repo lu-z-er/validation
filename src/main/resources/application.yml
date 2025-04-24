@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: validation
+
+  cloud:
+    function:
+      definition: validateOrder
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
